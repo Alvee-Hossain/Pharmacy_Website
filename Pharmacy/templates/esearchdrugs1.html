@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+{% block title %}
+    Employee | Search Drugs
+{% endblock %}
+{% block content %}
+
+<h1 align="center">Find Drugs & Conditions</h1>
+
+  <center>
+    <div class="search-container">
+        <form action="/action_page.php">
+          <input class="search_bar" type="text" placeholder="Enter a drug name..." name="search">
+          <button type="submit"><a href="/esearchdrugs2">Search</a></button>
+<!--          <button type="submit"><i class="fa fa-search"></i></button>-->
+            <br>
+            <select name="brach" id="brach_id">
+              <option value="volvo">Select Branch</option>
+              <option value="abc">Dhanmondi</option>
+              <option value="saab">Gulshan</option>
+            </select>
+        </form>
+      </div>
+  </center>
+
+{% block esearchdrugs2 %}
+{% endblock %}
+
+{% endblock %}

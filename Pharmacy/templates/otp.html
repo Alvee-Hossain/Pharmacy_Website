@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}
+    OTP
+{% endblock %}
+{% block content %}
+<h1 align="center">Reset Password</h1>
+<p align="center">Enter the OTP  that we've send your mobile number.</p>
+
+
+  <div class="w3-display-middle">
+    <div class="search-container">
+        <form action="/action_page.php">
+          <input class="search_bar" type="text" placeholder="OTP" name="otp">
+            <button type="submit"><a href="/resetpassword">Submit</a></button>
+        </form>
+      </div>
+  </div>
+
+{% endblock %}

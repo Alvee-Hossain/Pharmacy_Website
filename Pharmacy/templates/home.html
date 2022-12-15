@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}
+    Home
+{% endblock %}
+{% block content %}
+<h1 align="center">Find Drugs & Conditions</h1>
+  <div class="w3-display-middle">
+    <div class="search-container">
+        <form action="/action_page.php">
+          <input class="search_bar" type="text" placeholder="Enter a drug name..." name="search">
+          <button type="submit"><i class="fa fa-search"><a href="/search_drugs">.</a></i></button><br>
+            <select name="brach" id="brach_id">
+              <option value="volvo">Select Branch</option>
+              <option value="abc">Dhanmondi</option>
+              <option value="saab">Gulshan</option>
+            </select>
+        </form>
+      </div>
+  </div>
+
+{% endblock %}
